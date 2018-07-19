@@ -1,5 +1,7 @@
 package com.fly.freemarker.test.pojo;
 
+import java.util.Date;
+
 public class User {
 	private Integer id;
 	
@@ -8,6 +10,8 @@ public class User {
 	private byte sex;
 	
 	private String address;
+	
+	private Date birthday;
 
 	public User() {
 		super();
@@ -52,6 +56,14 @@ public class User {
 
 	public void setAddress(String address) {
 		this.address = address;
+	}
+	
+	public Date getBirthday() {
+		return birthday;
+	}
+
+	public void setBirthday(Date birthday) {
+		this.birthday = birthday;
 	}
 
 	@Override

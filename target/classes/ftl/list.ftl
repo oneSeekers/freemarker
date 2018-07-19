@@ -12,7 +12,11 @@
 			</tr>
 			
 			<#list list as user>
-				<tr>
+				<#if user_index % 2 == 0>
+				<tr bgcolor="red">
+				<#else>
+				<tr bgcolor="blue">
+				</#if>
 				<td>${user_index}</td>
 				<td>${user.id}</td>
 				<td>${user.name}</td>
