@@ -1,0 +1,15 @@
+1.引入freemarker的依赖
+	<dependency>
+			<groupId>org.freemarker</groupId>
+			<artifactId>freemarker</artifactId>
+			<version>2.3.23</version>
+		</dependency>
+2.spring的配置文件头中引入 context
+
+3.配置bean
+	<bean id="freemarkerConfig" class="org.springframework.web.servlet.view.freemarker.FreeMarkerConfigurer">
+		<property name="templateLoaderPath" value="">
+		<property name="defaultEncoding" value="UTF-8">	
+	</bean>
+
+4.其他步骤类似，就是把configuration对象托管在spring中了。
